@@ -1,0 +1,17 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     list-style-type: none;
+}
+body{
+     scroll-behavior: smooth;
+}
+:root{
+     --header-color :#0E0E0E;
+     --primary-color:#006A50;
+     --secondary-color:#C6E4D6;
+     --card-title:rgba(14, 14, 14, 0.8);
+     --card-sub-title:rgba(14, 14, 14, 0.7);
+}
+
