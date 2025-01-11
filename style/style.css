@@ -88,6 +88,7 @@ header > nav > button:hover{
      font-weight: 500;
      color:rgba(14, 14, 14, 0.5);
      margin-bottom: 16px;
+     line-height: 24px;
 }
 .hero-section-banner-left h1{
      font-size: 52px;
@@ -133,7 +134,8 @@ header > nav > button:hover{
      padding: 24px;
      background-color: white;
 }
-.pillar-card-header{
+.pillar-card-header,
+.vision-card-header{
      margin-bottom: 24px;
 }
 .pillar-card-header img,
@@ -151,6 +153,7 @@ header > nav > button:hover{
 .pillar-card-body p,
 .vision-card .vision-card-body p{
      font-size: 16px;
+     line-height: 24px;
      color: var(--card-sub-title);
 }
 
@@ -161,6 +164,7 @@ header > nav > button:hover{
 .vision-section-header p,
 .news-section-header p{
      margin-top: 24px;
+     line-height: 24px;
      color: var(--card-sub-title);
      font-size: 16px;
 }
@@ -177,6 +181,7 @@ header > nav > button:hover{
 }
 .vision-card p{
      font-size: 16px;
+     line-height: 24px;
      color: var(--card-sub-title);
 }
 .vision-card button{
@@ -213,13 +218,14 @@ header > nav > button:hover{
      margin-top: 32px;
      padding: 40px 120px;
 }
-.quoate{
+.quoate-section .quoate{
      padding: 48px 24px 48px;
      position: relative;
-     border: 1px solid #ccc; 
-     border-radius: 10px; 
+     border: 1px solid rgba(14, 14, 14, 0.15); 
+     border-radius: 16px;
+     background-color: rgba(255, 255, 255, 1); 
 }
-.quoate .quoate-bg{
+.quoate-section .quoate .quoate-bg{
      position: absolute;
      top: 20px;
      left: 27px;
@@ -231,59 +237,61 @@ header > nav > button:hover{
      background-repeat: no-repeat; 
      background-position: left top; 
 }
-.quoate-details p{
+.quoate-section .quoate-details p{
      color: var(--card-sub-title);
      font-size: 16px;
      margin-bottom: 12px;
+     line-height: 24px;
 }
-.quoate-owner h1{
+.quoate-section .quoate-owner h1{
      font-size: 20px;
      font-size: 600;
      color: var(--card-sub-title);
 }
-.quoate-owner p{
+.quoate-section .quoate-owner p{
      margin-top: 4px;
      color: rgba(14, 14, 14, 0.6);
      font-size: 16px;
+     line-height: 24px;
 }
 
 /* opinion section style */
 .opinion-section{
      padding: 40px 120px;
 }
-.opinions{
+.opinion-section .opinions{
      margin-top: 24px;
      background-color: rgba(255, 255, 255, 1);
      padding: 32px;
      border-radius: 16px;
      /* border: 1px solid var(--card-sub-title); */
 }
-.opinions table{
+.opinion-section .opinions table{
      width: 100%;
 }
-.opinions table,tr, td {
+.opinion-section .opinions table,tr, td {
      border: 1px solid rgba(14, 14, 14, 0.15);
      border-collapse: collapse;
 }
-.opinions table thead{
+.opinion-section .opinions table thead{
     background-color: rgba(198, 228, 214, 1);
 }
-.opinions table thead th{
+.opinion-section .opinions table thead th{
      text-align: left;
      font-size: 20px;
      font-weight: 600 ;
      padding: 24px;
 }
-.opinions table tbody td{
+.opinion-section .opinions table tbody td{
      padding: 24px;
      font-size: 16px;
      font-weight: 600;
 }
-.opinions table tbody .btn{
+.opinion-section .opinions table tbody .btn{
      text-align: center;
      width: 230px;
 }
-.opinions table tbody .btn button{
+.opinion-section .opinions table tbody .btn button{
      border: 1px solid rgba(14, 14, 14, 1);
      border-radius: 4px;
      background-color: rgba(198, 228, 214, 1);
@@ -291,7 +299,7 @@ header > nav > button:hover{
      font-weight: 600;
      padding: 10px 14px;
 }
-.opinions table tbody .btn button i{
+.opinion-section .opinions table tbody .btn button i{
      margin-left: 12px;
      font-size: 16px;
 }
@@ -301,10 +309,10 @@ header > nav > button:hover{
 .news-section{
      padding: 40px 120px;
 }
-.all-news{
+.news-section .all-news{
      margin-top: 32px;
 }
-.news{
+.news-section .news{
      background-color: rgba(255, 255, 255, 1);
      border-radius: 24px;
      padding: 48px;
@@ -313,38 +321,39 @@ header > nav > button:hover{
      justify-content: center;
      align-items: center;
 }
-.news .news-thumnail{
+.news-section .news .news-thumnail{
      flex: 0.3;
 }
-.news .news-thumnail img{
+.news-section .news .news-thumnail img{
      border-radius: 24px;
 }
-.news .news-details{
+.news-section .news .news-details{
      flex: 0.7;  
 }
-.news .news-details h1{
+.news-section .news .news-details h1{
      font-size: 32px;
      font-weight: bold;
      color: var(--card-sub-title);
      margin-bottom: 12px;
 }
-.news .news-details .news-channel img{
+.news-section .news .news-details .news-channel img{
      width: 134px;
      height: 40px;
 }
-.news .news-details .news-channel .publish-date{
+.news-section .news .news-details .news-channel .publish-date{
      margin-top: 12px;
      display: flex;
      gap: 12px;
      font-size: 16px;
      color: var(--card-sub-title);
 }
-.news .news-details p{
+.news-section .news .news-details p{
      font-size: 16px;
      color: var(--card-sub-title);
      margin-top: 12px;
+     line-height: 24px;
 }
-.news .news-details button{
+.news-section .news .news-details button{
      margin-top: 32px;
      padding: 13px 26px;
      font-size: 18px;
@@ -360,16 +369,16 @@ header > nav > button:hover{
 .donate-section{
      padding: 40px 120px;
 }
-.donate-header {
+.donate-section .donate-header {
      text-align: center;
 }
-.donate-header p{
+.donate-section .donate-header p{
      margin-top: 24px;
      font-size: 16px;
      line-height: 24px;
      color: var(--card-sub-title);
 }
-.donate-body{
+.donate-section .donate-body{
      margin-top: 32px;
      display: flex;
      justify-content: center;
@@ -377,7 +386,7 @@ header > nav > button:hover{
      gap: 24px;
 }
 
-.donate-body button{
+.donate-section .donate-body button{
      padding: 40px;
      font-size: 20px;
      color: rgba(14, 14, 14, 0.8);
@@ -388,19 +397,19 @@ header > nav > button:hover{
      cursor: pointer;
      transition: 0.3s;
 }
-.donate-body button:hover{
+.donate-section .donate-body button:hover{
      background-color: rgba(198, 228, 214, 1);
 }
-.donate-body .active{
+.donate-section .donate-body .active{
      background-color:rgba(198, 228, 214, 1) ;
  }
- .donate-footer{
+.donate-section .donate-footer{
      margin-top: 32px;
      display: flex;
      justify-content: center;
      align-items: center;
  }
- .donate-footer input{
+.donate-section .donate-footer input{
      background-color: #fff;
      /* border: 1px solid; */
      padding: 20px;
@@ -410,10 +419,10 @@ header > nav > button:hover{
      outline: none;
      border: 1px solid rgba(14, 14, 14, 0.15);
  }
- .donate-footer input::placeholder{
+.donate-section .donate-footer input::placeholder{
      color: rgba(14, 14, 14, 0.3);
  }
- .donate-section button{
+.donate-section button{
      padding: 17px 34px;
      background-color: var(--primary-color);
      border-radius: 8px;
@@ -447,6 +456,7 @@ header > nav > button:hover{
 .subscribe-main .subscribe-header p{
      margin-top: 16px;
      margin-bottom: 24px;
+     line-height: 24px;
      font-size: 16px;
      text-align: center;
      color: var(--card-sub-title);
@@ -487,6 +497,7 @@ header > nav > button:hover{
 }
 .subscribe-main p{
      margin-top:25px ;
+     line-height: 24px;
      text-align: center;
      color:var(--card-sub-title);
 }
@@ -501,11 +512,21 @@ footer h1{
      font-size: 32px;
      color: var(--header-color);
      font-weight: bold;
+     margin-bottom: 32px;
+}
+footer hr{
+     border: 1px solid rgba(14, 14, 14, 0.1);
+     width: 80%;
+     margin: 0 auto;
 }
 footer .footer-links{
-     margin-top: 64px;
+     margin-top: 32px;
      display: flex;
      gap: 23px;
      justify-content: center;
      align-items: center;
+}
+footer .footer-links img{
+     width: 24px;
+     height: 24px;
 }
